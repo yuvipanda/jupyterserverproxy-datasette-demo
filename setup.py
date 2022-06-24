@@ -5,9 +5,12 @@ with open("README.md", encoding="utf8") as f:
 
 setuptools.setup(
   name="jupyter-datasette-proxy",
-  version="1.0",
+  version="1.1",
   # py_modules rather than packages, since we only have 1 file
-  py_modules=['nbdatasette'],
+  py_modules=['jupyter-datasette-proxy'],
+  project_urls={
+      "Source":"https://github.com/psychemedia/jupyter-datasette-proxy",
+  },
   install_requires=[
     'datasette',
     'jupyter-server-proxy'
